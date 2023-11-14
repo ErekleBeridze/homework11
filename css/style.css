@@ -1,0 +1,64 @@
+.grid_container {
+    gap: 40px;
+    height: 832px;
+    background-color: var(--default-color);
+    display: grid;
+    grid-template-columns: repeat(4, 320px);
+    grid-template-rows: 48px 160px 160px 320px;
+    grid-template-areas: 
+    "header header header header"
+    "article div1 div1 div2"
+    "article div1 div1 div3"
+    "prise1 prise2 prise3 prise4"
+    ;
+}
+
+header {
+    font-size: 50px;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 212px;
+    grid-area: header;
+}
+
+article {
+    background-color: aqua;
+    grid-area: article;
+}
+
+.div1 {
+    background-color: chartreuse;
+    grid-area: div1;
+}
+
+.div2 {
+
+    background-color: dimgray;
+    grid-area: div2;
+}
+
+.div3 {
+
+    background-color: green;
+    grid-area: div3;
+}
+
+
+.prise1 {
+    grid-area: prise1;
+
+}
+
+.prise2 {
+    grid-area: prise2;
+}
+
+.prise3 {
+    grid-area: prise3;
+}
+
+.prise4 {
+    grid-area: prise4;
+}
