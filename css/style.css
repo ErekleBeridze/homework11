@@ -1,11 +1,12 @@
 .grid_container {
+    max-width: 1440px;
     margin: auto;
     gap: 40px;
     height: 832px;
     background-color: var(--default-color);
     display: grid;
     grid-template-columns: repeat(4, 320px);
-    grid-template-rows: 48px 160px 160px 320px;
+    grid-template-rows: 48px 160px 160px 284px;
     grid-template-areas:
         "header header header header"
         "article div1 div1 div2"
@@ -84,7 +85,7 @@ nav {
 
 
 /* article */
-article {
+.article1 {
     margin-left: 20px;
     background: rgba(0, 0, 0, 0.20);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20) inset, 0px -1px 4px 0px rgba(223, 217, 217, 0.40) inset;
@@ -128,24 +129,36 @@ h3 {
 
 .green_sofa {
     width: 680px;
-    height: 360px;
+    height: 320px;
     flex-shrink: 0;
 }
 
 .div1 {
-    position: relative;
     grid-area: div1;
 }
 
 .div1_p {
-    position: absolute;
+    background: #DFD9D9;
+    padding: 8px 411px 8px 20px;
+    display: inline-block;
     color: #1C5550;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-    /* 150% */
+}
+
+.div1_button {
+    border: none;
+    color: white;
+    display: inline-block color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    background: #C3B97F;
+    padding: 9px 50px 9px 62px;
 }
 
 .div2 {
@@ -158,20 +171,164 @@ h3 {
     grid-area: div3;
 }
 
+/* CARDS */
+
+.card_div {
+    margin-left: 20px;
+}
 
 .prise1 {
     grid-area: prise1;
 
 }
 
+
+.card_img {
+    width: 300px;
+    height: 180px;
+    position: absolute;
+}
+
+.card_img1 {
+    width: 320px;
+    height: 180px;
+    position: absolute;
+}
+
+.prise1p {
+    margin-top: 8px;
+    margin-left: 8px;
+    position: absolute;
+    color: #1C5550;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+}
+
+.cardp {
+    margin-top: 188px;
+    color: #DFD9D9;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+.cardp2 {
+    display: inline-block;
+    color: #1C5550;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+.card_div2 {
+    margin-top: 244px;
+    background: #DFD9D9;
+    display: inline-flex;
+    padding-left: 0px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 146px;
+    padding-left: 15px;
+    margin-top: 8px;
+}
+
+.card_button {
+    display: flex;
+    height: 40px;
+    padding: 9px 8px 9px 10px;
+    justify-content: center;
+    align-items: center;
+    background: #C3B97F;
+    color: #DFD9D9;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    border: none;
+}
+
+
+/* CARD2 */
 .prise2 {
     grid-area: prise2;
 }
 
+.prise2p{
+    margin-top: 8px;
+    margin-left: 8px;
+    position: absolute;
+    color: #1C5550;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+}
+
+.card_p2{
+    display: inline-block;
+    color: #DFD9D9;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-top: 188px;
+}
+
+.card_div3{
+    margin-top: 244px;
+    background: #DFD9D9;
+    display: inline-flex;
+    padding-left: 0px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 165px;
+    padding-left: 15px;
+    margin-top: 8px;
+}
+
+.div_p3{
+    display: inline-block;
+    color: #1C5550;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.card_button2{
+    display: flex;
+    height: 40px;
+    padding: 9px 8px 9px 10px;
+    justify-content: center;
+    align-items: center;
+    background: #C3B97F;
+    color: #DFD9D9;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    border: none;
+}
+
+/* card3 */
 .prise3 {
     grid-area: prise3;
 }
 
+
+
+/* card4 */
 .prise4 {
     grid-area: prise4;
 }
