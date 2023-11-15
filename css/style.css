@@ -137,14 +137,15 @@ h3 {
     grid-area: div1;
 }
 
-.div1_p{
+.div1_p {
     position: absolute;
     color: #1C5550;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px; /* 150% */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
 }
 
 .div2 {
